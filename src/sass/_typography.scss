@@ -1,0 +1,30 @@
+.h1 {
+    font-family: $font-main;
+    font-size: 100px;
+    font-weight: $font-bold;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: $color-main;
+    line-height: 100px;
+}
+
+.h2 {
+    font-family: $font-main;
+    font-size: 75px;
+    font-weight: $font-bold;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: $color-main;
+    line-height: 100px;
+    text-align: center;
+
+}
+
+.h3 {
+    font-family: $font-main;
+    font-size: 48px;
+    font-weight: $font-bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $color-black;
+}
