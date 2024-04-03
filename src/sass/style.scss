@@ -1,0 +1,15 @@
+// normalize default styles
+@import "normalize";
+
+// variables
+
+@import "variables";
+
+// common styles
+@import "global";
+@import "layout";
+@import "typography";
+@import "media";
+@import "partials/about";
+@import "partials/home";
+@import "partials/products";

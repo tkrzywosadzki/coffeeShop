@@ -1,0 +1,147 @@
+.hero {
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.690),rgba(0, 0, 0, 0.690)),
+                url("/images/background.png");
+    background-size: cover;
+    
+}
+
+.header {
+    padding: 0px 5% 0px 5%;
+    display: flex;
+   
+    
+}
+
+.logo {
+    flex: 1;
+    font-weight: $font-black;
+
+
+    h4 {
+        font-family: $font-main;
+        font-size: 36px;
+        letter-spacing: 11px;
+        text-transform: uppercase;
+        color: $color-white;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 0px;
+        
+    }
+
+    p {
+        width: 336px;
+        height: 102px;
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $color-white;
+        margin-top: 10px;
+        margin-left: 100px;
+        margin-bottom: 0px;
+    }
+}
+
+.navbar {
+    flex: 1;
+    text-align: end;
+    
+
+    ul {
+        margin-top: 60px;
+    }
+    
+    li {
+        display: inline;
+        margin: 0px 10px;
+    }
+
+    .navlinks {
+        opacity: 0.502;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: $font-semibold;
+        text-decoration: none;
+    }
+    .navlinks:hover {
+        opacity: 1;
+    }
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    
+    
+
+    h1 {
+        font-size: 100px;
+        letter-spacing: 20px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: $color-main;
+        font-weight: $font-bold;
+        margin: 0;
+    }
+}
+
+.page-title .title-first {
+    flex: 1;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.page-title .title-second {
+    text-align: end;
+    
+}
+
+
+.page-title::after {
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 276px;
+    height: 6px;
+    background-color: $color-main;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.discover {
+    color: $color-white;
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: -450px;
+
+    h5 {
+        font-size: 34px;
+        letter-spacing: 7px;
+        line-height: 172px;
+        text-transform: uppercase;
+        font-weight: $font-regular;
+        margin: 0;
+    }
+
+    i {
+        //width: 293px;
+        //height: 285px;
+        font-size: 40px;
+        letter-spacing: 8px;
+        line-height: 40px;
+        text-transform: uppercase;
+
+    }
+}
