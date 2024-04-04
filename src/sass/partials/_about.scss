@@ -1,0 +1,72 @@
+.about-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.690),rgba(0, 0, 0, 0.690)),
+                url("/images/about-us.jpg");
+    background-size: cover;
+    width:auto;
+    height: 1000px;
+    position:relative;
+}
+
+.about-title {
+    flex: 1;
+    text-align: center;
+    margin-left:0;
+    position: relative;
+    margin: 80px 0 0 0px;
+    padding: 0;
+
+    h3 {
+        width: 1919px;
+        height: 285px;
+        font-size: 75px;
+        letter-spacing: 15px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: $color-main;
+        font-weight: $font-bold;
+        padding-top: 50px;
+        margin: auto;
+
+    }
+}
+
+.about-title::after {
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 6px;
+    background-color: $color-main;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 10%;
+
+}
+
+.about-us {
+    margin: 10px auto;
+    padding: 6px 0 0 30px;
+    width: 800px;
+    position: relative;
+    p {
+        width: 971px;
+        height: 130px;
+        font-size: 40px;
+        letter-spacing: 1px;
+        color: $color-white;
+        font-weight: $font-semibold;
+        font-style: italic;
+    }
+}
+
+.join-us {
+    width: 971px;
+    height: 130px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: $color-white;
+    font-weight: $font-semibold;
+    font-style: italic;
+    text-align:right;
+}

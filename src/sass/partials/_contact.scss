@@ -1,0 +1,56 @@
+form{
+    display: block;
+    height: 1000px;
+}
+
+.form-container {
+    text-align: center;
+
+    p {
+        font-size: 30px;
+        letter-spacing: 6px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: $color-black;
+        font-weight: $font-bold;
+        text-align: center;
+        margin: 0;
+    }
+
+    input {
+        margin: 5px 0;
+        width: 530px;
+        height: 60px;
+        border: 3px solid $color-black;
+    }
+
+    textarea {
+        margin: 5px 0;
+        resize: none;
+        width: 530px;
+        height: 200px;
+        border: 3px solid $color-black;
+    }
+
+    button[type="submit"] {
+        font-size: 30px;
+        letter-spacing: 6px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: $font-bold;
+        text-align:center;
+        background: $color-main;
+        display: block;
+        border: 0px;
+        width: 250px;
+        height: 90px;
+        margin: 40px auto;
+        padding-top: 0;
+        
+        
+
+
+    }
+}
+
