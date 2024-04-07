@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL TIGRE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <h4>El tigre</h4>
+                    <p>Venezuela coffee beans</p>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#home" class="navlinks">Home</a>
+                        </li>
+                        <li>
+                            <a href="#products" class="navlinks">Products</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="navlinks">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-title">
+                <div class="title-first">
+                    <h1>Home of</h1>
+                </div>
+                <div class="title-second">
+                    <h1>original tastes</h1>
+                </div>
+            </div>
+            <div class="discover">
+                <h5>discover</h5>
+                <i class="fa-regular fa-circle-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <div id="pages">
+        <section id="home" class="page">
+            <div id="home-wrapper" class="home-wrapper container"></div>
+            <div class="about-container">
+                <div class="about-title">
+                    <h3>About Us</h3>
+                </div>
+                <div class="about-us">
+                    <p>Who are we? Just a bunch of friends with <br> a love for a good coffee and desire to create <br> something new, something original</p>
+                    <p>Our coffees reflect us - young, wild and free. <br> We are on the journey of new tastes...</p>
+                    <p class="join-us">Join us!</p>
+                </div>
+            </div>
+            <footer>
+                <p class="footer">&copy; 2023 EL TIGRE inc.</p>
+            </footer>
+        </section>
+        <section id="products" class="page">
+            <div id="product-wrapper" class="product-wrapper container"></div>
+            <footer>
+                <p class="footer">&copy; 2023 EL TIGRE inc.</p>
+            </footer>
+        </section>
+        <section id="contact" class="page">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Contact us</h1>
+                </div>
+                <div class="form-container">
+                    <form class="contact-form">
+                        <!-- <label></label> zamienic <p> na np <span> -->
+                        <label>
+                        <span>name</span>
+                        <input type="text" name="name" required>
+                        </label>
+                        <label>
+                        <span>title</span>
+                        <input type="text" name="title" required>
+                        </label>
+                        <label>
+                        <span>message</span>
+                        <textarea name="message" cols="60" rows="5" maxlength="800" required></textarea>
+                        <button type="submit">submit</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <p class="footer">&copy; 2023 EL TIGRE inc.</p>
+            </footer>
+        </section>
+    </div>
+
+    <!-- TEMPLATES -->
+    <script id="template-home" type="text/x-handlebars-template">
+            <section id="home">
+                <div class="home-products"></div>            
+            </section>
+        </div>
+    </script>
+
+    <script id="template-products" type="text/x-handlebars-template">
+        <section id="products">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Products</h1>
+                </div>
+                {{#each products}}
+                <div id="{{ id }}" class="products-details {{ reverse }}">
+                    <div class="product-description">
+                        <div class="description-title">
+                            <h2> {{ name }} </h2>
+                        </div>
+                        <div class="description-text">
+                            <p> {{ description }} </p>
+                        </div>
+                        <div class="description-rating">
+                            <ul>
+                                <li>ROASTING: <span> {{ roasting }} </span></li>
+                                <li>INTENSITY: <span> {{ intensity }} </span></li>
+                            </ul>
+                            <img src="/images/most-popular.png" class="show {{ popular }}" alt="popular">
+                        </div>
+                    </div>
+                    <div class="product-img">
+                        <img src=" {{ img }}" alt="{{ title }}">
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
