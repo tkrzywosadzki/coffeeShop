@@ -5,8 +5,18 @@ form{
 
 .form-container {
     text-align: center;
+    
+    display: flex;
+    align-items:center;
+    justify-content: center;
 
-    p {
+
+    label {
+        display: block;
+        
+    }
+
+    span {
         font-size: 30px;
         letter-spacing: 6px;
         line-height: 100px;
@@ -22,6 +32,9 @@ form{
         width: 530px;
         height: 60px;
         border: 3px solid $color-black;
+        display: block;
+        align-items: center;
+
     }
 
     textarea {
@@ -30,6 +43,7 @@ form{
         width: 530px;
         height: 200px;
         border: 3px solid $color-black;
+        display: block;
     }
 
     button[type="submit"] {
@@ -47,6 +61,7 @@ form{
         height: 90px;
         margin: 40px auto;
         padding-top: 0;
+        cursor: pointer;
         
         
 

@@ -1,4 +1,4 @@
-.products-title {
+.section-title {
     text-align: center;
     margin-left: -18%;
     position: relative;
@@ -18,7 +18,7 @@
     }
 }
 
-.products-title::after {
+.section-title::after {
     content: '';
     top: 100%;
     left: 50%;
@@ -71,7 +71,7 @@
         height: 4px;
         background-color: $color-main;
         position: absolute;
-        margin-left: -42%;
+        margin-left: -39%;
         margin-top: 10px;
     }
 

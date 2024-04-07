@@ -72,18 +72,25 @@
         </section>
         <section id="contact" class="page">
             <div class="container">
-                <div class="products-title">
+                <div class="section-title">
                     <h1>Contact us</h1>
                 </div>
                 <div class="form-container">
                     <form class="contact-form">
-                        <p>name</p>
+                        <!-- <label></label> zamienic <p> na np <span> -->
+                        <label>
+                        <span>name</span>
                         <input type="text" name="name" required>
-                        <p>title</p>
+                        </label>
+                        <label>
+                        <span>title</span>
                         <input type="text" name="title" required>
-                        <p>message</p>
+                        </label>
+                        <label>
+                        <span>message</span>
                         <textarea name="message" cols="60" rows="5" maxlength="800" required></textarea>
                         <button type="submit">submit</button>
+                        </label>
                     </form>
                 </div>
             </div>
@@ -104,7 +111,7 @@
     <script id="template-products" type="text/x-handlebars-template">
         <section id="products">
             <div class="container">
-                <div class="products-title">
+                <div class="section-title">
                     <h1>Products</h1>
                 </div>
                 {{#each products}}
