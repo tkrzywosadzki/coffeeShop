@@ -1,0 +1,203 @@
+@media (min-width: 320px) and (max-width: 1400px) {
+
+    /* HERO SECTION */
+    .hero{
+        background-size: auto;
+        height: 800px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .container {
+        margin: 0 auto;
+        width: 400px;
+
+        .discover {
+            bottom: -300px;
+
+            h5 {
+                font-size: 20px;
+            }
+
+            i {
+                position: relative;
+                bottom: 50px;
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    .navbar {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+
+
+        li {
+            margin: 5px;
+        }
+    }
+
+    .logo {
+        text-align: center;
+
+        h4 {
+            margin: 20px auto 0 auto;
+        }
+
+        p {
+            margin: auto;
+        }
+    }
+
+    .page-title {
+        margin-top: 50px;
+        text-align: center;
+        
+
+        h1{
+            font-size: 50px;
+        }
+
+        .title-first {
+            margin: auto;
+            text-align: center;
+        }
+
+        .title-second {
+            margin: auto;
+            text-align: center;
+        }  
+
+    }
+
+    .page-title::after{
+        margin-top: 20px;
+        height: 4px;
+    }
+
+    /* PRODUCTS SECTION */
+
+    .section-title {
+
+        h1 {
+            font-size: 35px;
+            padding-top: 0;
+            margin-top: -50px;
+        }
+    }
+
+    .section-title::after {
+        width: 450px;
+        height: 4px;
+        margin-top: -200px;
+    
+    }
+
+    .products-details {
+        flex-direction: column;
+        height: 1000px;
+        margin-top:-200px;
+        
+
+        &.reverse {
+            flex-direction: column;
+        }
+    }
+
+    .description-title {
+        font-size: 25px;
+
+        h2 {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    .product-description {
+        margin-bottom: -100px;
+    }
+
+    .description-text {
+
+        p {
+        font-size: 10px;
+        }
+    }
+
+    .product-description .description-rating .show.active {
+        display:none;
+    }
+
+    /* ABOUT SECTION */
+
+    .about-container {
+        height: 450px;
+
+    }
+
+    .about-us {
+        width: auto;
+        margin:auto;
+        text-align: center;
+        margin-top: -150px;
+
+        p {
+            font-size: 20px;
+            margin-bottom: -50px;
+            text-align: center;
+            width: auto;
+        }
+
+        .join-us {
+            margin-left: 200px;
+        }
+    }
+
+
+    /* CONTACT SECTION */
+
+    .form-container {
+        height: 600px;
+
+        span {
+            font-size: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            margin: auto;
+        }
+
+        textarea {
+            width: 300px;
+        }
+
+        button[type=submit] {
+            height: 50px;
+            width: 110px;
+            line-height: 38px;
+            font-size: 19px;
+            margin: 30px auto;
+            
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
